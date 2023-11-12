@@ -10,13 +10,13 @@ export const Header = () => {
             <nav className="nav">
                 <Button text='Menu' className='ghost-btn' />
                 <div className="nav__icon">
-                    <IconWrapper bgColor='transparent' border='1px solid #000000' padding='0.3rem'>
+                    <IconWrapper bgColor='transparent' border='1px solid #000000' width={35}>
                         <Menu size={24} color='#000000' weight='thin' />
                     </IconWrapper>
                 </div>
             </nav>
             <div className='brand'>
-                <div className="brand__icon"><IconWrapper bgColor='#ff4e26' padding='.25rem'>
+                <div className="brand__icon"><IconWrapper bgColor='#ff4e26' width={28}>
                     <Tooth size={20} color="#ffffff"
                            weight="thin" /></IconWrapper>
                 </div>

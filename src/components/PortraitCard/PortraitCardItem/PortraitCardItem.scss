@@ -1,0 +1,30 @@
+.portrait {
+  &__item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 300px;
+    border-radius: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: 0 0;
+  }
+
+  &__advantage {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__description {
+    background-color: #ffffff;
+    border-radius: 1.4rem;
+    padding: 0.5rem 0.7rem;
+    white-space: nowrap;
+  }
+}
