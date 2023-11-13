@@ -1,14 +1,23 @@
-import './HomePage.scss';
-import {PortraitCardList} from "../../components/PortraitCard/PortraitCardList/PortraitCardList.tsx";
-
+import "./HomePage.scss";
+import { useEffect } from "react";
+import LocomotiveScroll from "locomotive-scroll";
+import { AdvantagesSection } from "./AdvantagesSection/AdvantagesSection.tsx";
+import { ServiceSection } from "./ServiceSection/ServiceSection.tsx";
+import { CtaSection } from "./CtaSection/CtaSection.tsx";
 
 export const HomePage = () => {
-    return (
-        <main>
-           <section className="advantages__section">
-               <h1 className="advantages__title">OUR ADVANTAGES</h1>
-               <PortraitCardList />
-           </section>
-        </main>
-    );
+
+  useEffect(() => {
+    // @ts-expect-error expected configuration based on the library doc
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const locomotiveScroll = new LocomotiveScroll();
+  });
+
+  return (
+    <main >
+      <AdvantagesSection />
+      <ServiceSection />
+      <CtaSection />
+    </main>
+  );
 };

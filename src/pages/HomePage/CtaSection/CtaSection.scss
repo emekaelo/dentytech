@@ -1,0 +1,46 @@
+.cta {
+  &__section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 2rem;
+  }
+
+  &__explore {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex: 1.1;
+  }
+
+  &__content {
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 3rem 0;
+
+    div {
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+
+      }
+
+    }
+
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+}
