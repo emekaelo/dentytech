@@ -1,0 +1,18 @@
+.cta-offering__item {
+  list-style: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1.25rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 275px;
+
+  &-action-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .25rem;
+  }
+}

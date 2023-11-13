@@ -1,20 +1,15 @@
-interface IconWrapperConfig {
-    bgColor: string;
-    border?: string;
-    children: React.ReactNode,
-    padding?: string;
-    width?: number
-}
+import {IconWrapperConfig} from "../../models";
+
 
 export const IconWrapper = ({bgColor, border, children, padding, width}: IconWrapperConfig) => {
     const styles = {
-        'background-color': bgColor,
-        'border-radius': '50%',
+        backgroundColor: bgColor,
+        borderRadius: '50%',
         width: `${width || 36}px`,
         height: `${width || 36}px`,
         display: 'flex',
-        'justify-content': 'center',
-        'align-items': 'center',
+        justifyContent: 'center',
+        alignItems: 'center',
         padding,
         border
     }
