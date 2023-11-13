@@ -19,7 +19,10 @@ export const AdvantagesSection = () => {
                 .from(
                     [".portrait__list", ".advantages__title div"],
                     {
-                        y: 100
+                        y: 100,
+                        stagger: {
+                            amount:0.1
+                        }
                     }
                 );
         }, advantagesSectionRef);
