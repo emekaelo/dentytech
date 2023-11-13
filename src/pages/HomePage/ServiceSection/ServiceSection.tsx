@@ -77,6 +77,7 @@ export const ServiceSection = () => {
     return (
         <section ref={serviceSectionRef} className="service__section">
             <h1 className="service__title">
+                <div className="service__title-wrapper">
                 <div className="service__title-text-wrapper">
                     <span className="service__title-text">REVOLUTIONIZING</span>
                     <div className="service__aim">
@@ -106,6 +107,7 @@ export const ServiceSection = () => {
                 </div>
                 <div className="service__title-text-wrapper">
                     <span className="service__title-text">WITH TECHNOLOGY</span>
+                </div>
                 </div>
             </h1>
             <SectionBase />
