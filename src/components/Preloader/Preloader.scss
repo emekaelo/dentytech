@@ -1,0 +1,74 @@
+.preloader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #fffcee;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+  }
+
+  &__text {
+    width: 100%;
+    display: flex;
+
+    align-items: center;
+
+    .arr-two {
+      align-self: flex-start;
+      display: flex;
+      align-items: center;
+      background-color: #ff4e26;
+      color: #ffffff;
+      padding: 0 1.5rem;
+      border-radius: 2rem;
+      font-size: 1.4rem;
+
+      & > span {
+        margin-top: 0.3rem;
+        overflow: hidden;
+        padding: .5rem 0;
+      }
+    }
+
+    .arr-three {
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      color: #ff4e26;
+      padding: 0 1.5rem;
+      border-radius: 2rem;
+      font-size: 1.4rem;
+      overflow: hidden;
+
+      span {
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.65rem;
+
+    &__name {
+      overflow: hidden;
+      height: 1.4rem;
+
+      & > div {
+      color: #ff4e26;
+      font-size: 1.4rem;
+      }
+    }
+  }
+}
