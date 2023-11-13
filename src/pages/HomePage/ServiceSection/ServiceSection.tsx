@@ -21,7 +21,6 @@ export const ServiceSection = () => {
                         trigger: ".service__title-text",
                         start: "top 90%",
                         end: "bottom top",
-                        markers: true,
                         toggleActions: "restart none none reverse"
                     }
                 })
