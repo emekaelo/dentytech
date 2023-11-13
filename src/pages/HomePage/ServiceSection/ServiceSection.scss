@@ -8,12 +8,9 @@
   &__title {
     font-size: 6rem;
     font-weight: 400;
-
-    &-wrapper {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 
     &-text-wrapper {
       overflow: hidden;
