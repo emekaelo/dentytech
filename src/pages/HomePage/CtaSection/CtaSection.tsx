@@ -9,7 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const CtaSection = () => {
-  const ctaSection = useRef(null);
+  const ctaSectionRef = useRef(null);
 
   const tl = useRef<GSAPTimeline>();
   gsap.registerPlugin(ScrollTrigger);
@@ -34,13 +34,13 @@ export const CtaSection = () => {
           },
           "<"
         );
-    }, ctaSection);
+    }, ctaSectionRef);
     return () => ctx.revert();
 
   }, []);
 
   return (
-    <section ref={ctaSection} className="cta__section">
+    <section ref={ctaSectionRef} className="cta__section">
       <div className="cta__explore">
         <div className="cta__content">
           <div className="cta__icons">

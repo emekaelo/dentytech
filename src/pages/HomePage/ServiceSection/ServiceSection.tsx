@@ -8,7 +8,7 @@ import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 
 export const ServiceSection = () => {
-    const serviceSection = useRef(null);
+    const serviceSectionRef = useRef(null);
 
     const tl = useRef<GSAPTimeline>();
     gsap.registerPlugin(ScrollTrigger);
@@ -69,13 +69,13 @@ export const ServiceSection = () => {
                     },
                     "<-=0.2"
                 )
-        }, serviceSection);
+        }, serviceSectionRef);
 
         return () => ctx.revert();
     }, []);
 
     return (
-        <section ref={serviceSection} className="service__section">
+        <section ref={serviceSectionRef} className="service__section">
             <h1 className="service__title">
                 <div className="service__title-text-wrapper">
                     <span className="service__title-text">REVOLUTIONIZING</span>

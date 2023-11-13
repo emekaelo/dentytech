@@ -12,7 +12,10 @@ export const Preloader = () => {
     const ctx = gsap.context(() => {
       tl.current = gsap.timeline().from([".brand__name > div",".brand"], {
         y: 50,
-      });
+      }).to(preloaderRef.current, {
+        opacity:0,
+        delay: 2,
+      },"<");
       // tl.current = gsap
       //     .timeline()
       //     .fromTo(
