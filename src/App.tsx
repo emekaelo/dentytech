@@ -9,7 +9,7 @@ const App = () => {
   const removePreloader = () => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 2300);
   };
   useEffect(() => {
     removePreloader();
@@ -17,13 +17,13 @@ const App = () => {
 
   return (
     <>
-      <Preloader />
-        {!isLoading && (
-          <>
-            <Header />
-            <HomePage />
-          </>
-        )}
+      {isLoading && <Preloader />}
+      {!isLoading && (
+        <>
+          <Header />
+          <HomePage />
+        </>
+      )}
     </>
   );
 };
