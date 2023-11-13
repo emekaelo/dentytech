@@ -15,13 +15,11 @@
     &-text-wrapper {
       overflow: hidden;
       height: 7rem;
-      position: relative;
       display: flex;
       align-items: center;
 
       &:nth-of-type(1) {
         margin: 0 4rem;
-        justify-content: end;
 
         & > span {
           translate: 8rem;
@@ -49,7 +47,7 @@
   }
 
   &__aim {
-    margin-right: 10rem;
+    margin-right: 7rem;
     margin-bottom: 1.25rem;
 
     &-text {
