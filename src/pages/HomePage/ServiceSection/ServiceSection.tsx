@@ -32,7 +32,7 @@ export const ServiceSection = () => {
                 .to(
                     ".service__title-text-wrapper:nth-of-type(1) .service__title-text",
                     {
-                        left: "0",
+                        x:0,
                         ease: "out",
                     }
                 )

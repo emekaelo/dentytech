@@ -23,8 +23,8 @@
         margin: 0 4rem;
         justify-content: end;
 
-        span {
-          left: 13rem;
+        & > span {
+          translate: 8rem;
           display: flex;
           align-items: center;
         }
@@ -36,7 +36,6 @@
     }
 
     &-text {
-      position: absolute;
     }
   }
 
